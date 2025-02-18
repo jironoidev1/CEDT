@@ -1,0 +1,1008 @@
+[
+    {
+        "id": "4019ccb2f74580d2",
+        "type": "tab",
+        "label": "CEDT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4d2e3522e3cedaf1",
+        "type": "ui_text_input",
+        "z": "4019ccb2f74580d2",
+        "name": "",
+        "label": "HN :",
+        "tooltip": "",
+        "group": "8445dfc4dbed0e08",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 390,
+        "y": 280,
+        "wires": [
+            [
+                "15b9b3d17a64e2c7"
+            ]
+        ]
+    },
+    {
+        "id": "07d15b6d3566efd2",
+        "type": "ui_text",
+        "z": "4019ccb2f74580d2",
+        "group": "8445dfc4dbed0e08",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "แฟ้มประวัติผู้ป่วย",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Trebuchet MS,Helvetica,sans-serif",
+        "fontSize": "32",
+        "color": "#ffffff",
+        "x": 680,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d7f3a6e70732f39a",
+        "type": "ui_dropdown",
+        "z": "4019ccb2f74580d2",
+        "name": "คำนำหน้า",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "8445dfc4dbed0e08",
+        "order": 12,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "นาย",
+                "value": "นาย",
+                "type": "str"
+            },
+            {
+                "label": "นาง",
+                "value": "นาง",
+                "type": "str"
+            },
+            {
+                "label": "นางสาว",
+                "value": "นางสาว",
+                "type": "str"
+            },
+            {
+                "label": "เด็กชาย",
+                "value": "เด็กชาย",
+                "type": "str"
+            },
+            {
+                "label": "เด็กหญิง",
+                "value": "เด็กหญิง",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 400,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e53bcc92457cf3f7",
+        "type": "ui_text",
+        "z": "4019ccb2f74580d2",
+        "group": "8445dfc4dbed0e08",
+        "order": 13,
+        "width": 5,
+        "height": 1,
+        "name": "name",
+        "label": "ชิ่อ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 770,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "0ddc3fd155fe801a",
+        "type": "ui_text",
+        "z": "4019ccb2f74580d2",
+        "group": "8445dfc4dbed0e08",
+        "order": 14,
+        "width": 7,
+        "height": 1,
+        "name": "lastname",
+        "label": "นามสกุล",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 780,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "84c5505a18568486",
+        "type": "ui_media",
+        "z": "4019ccb2f74580d2",
+        "group": "8445dfc4dbed0e08",
+        "name": "",
+        "width": 5,
+        "height": 5,
+        "order": 9,
+        "category": "haha",
+        "file": "236803.jpg",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1050,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "398a6c0828d87db7",
+        "type": "ui_text",
+        "z": "4019ccb2f74580d2",
+        "group": "8445dfc4dbed0e08",
+        "order": 23,
+        "width": 14,
+        "height": 1,
+        "name": "",
+        "label": "อาการ : ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 620,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "73dc613564bf128f",
+        "type": "ui_text_input",
+        "z": "4019ccb2f74580d2",
+        "name": "อาการ(manual)",
+        "label": "อาการ(manual)",
+        "tooltip": "",
+        "group": "8445dfc4dbed0e08",
+        "order": 18,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 400,
+        "y": 420,
+        "wires": [
+            [
+                "398a6c0828d87db7"
+            ]
+        ]
+    },
+    {
+        "id": "403334480b4e786b",
+        "type": "ui_dropdown",
+        "z": "4019ccb2f74580d2",
+        "name": "อาการ(auto)",
+        "label": "อาการ(auto)",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "8445dfc4dbed0e08",
+        "order": 19,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "covid",
+                "value": "covid",
+                "type": "str"
+            },
+            {
+                "label": "ง่อย",
+                "value": "ง่อย",
+                "type": "str"
+            },
+            {
+                "label": "กระดูกหัก",
+                "value": "กระดูกหัก",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 390,
+        "y": 460,
+        "wires": [
+            [
+                "398a6c0828d87db7"
+            ]
+        ]
+    },
+    {
+        "id": "c05a31fd860a6673",
+        "type": "ui_led2",
+        "z": "4019ccb2f74580d2",
+        "order": 1,
+        "group": "7224db0a8c566881",
+        "width": 2,
+        "height": 2,
+        "label": "",
+        "property": "payload",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ffffff",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "red",
+        "x": 870,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "8fd440f5d556a686",
+        "type": "ui_led2",
+        "z": "4019ccb2f74580d2",
+        "order": 3,
+        "group": "7224db0a8c566881",
+        "width": 2,
+        "height": 2,
+        "label": "",
+        "property": "payload",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ffffff",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#fbff00",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "yellow",
+        "x": 870,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "aa1f4513913194b7",
+        "type": "ui_led2",
+        "z": "4019ccb2f74580d2",
+        "order": 5,
+        "group": "7224db0a8c566881",
+        "width": 2,
+        "height": 2,
+        "label": "",
+        "property": "payload",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ffffff",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#00ff6e",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "green",
+        "x": 870,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "79f90412ea0b5b63",
+        "type": "ui_switch",
+        "z": "4019ccb2f74580d2",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "7224db0a8c566881",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 650,
+        "y": 540,
+        "wires": [
+            [
+                "c05a31fd860a6673",
+                "8fd440f5d556a686",
+                "aa1f4513913194b7"
+            ]
+        ]
+    },
+    {
+        "id": "32d52f0f6adcc380",
+        "type": "ui_text_input",
+        "z": "4019ccb2f74580d2",
+        "name": "จ่ายยา(manual) :",
+        "label": "จ่ายยา(manual) :",
+        "tooltip": "",
+        "group": "8445dfc4dbed0e08",
+        "order": 29,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 400,
+        "y": 600,
+        "wires": [
+            [
+                "5a8f72551eadb467"
+            ]
+        ]
+    },
+    {
+        "id": "c5defcb74f39a239",
+        "type": "ui_dropdown",
+        "z": "4019ccb2f74580d2",
+        "name": "จ่ายยา(auto)",
+        "label": "จ่ายยา(auto)",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "8445dfc4dbed0e08",
+        "order": 30,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "covid",
+                "value": "covid",
+                "type": "str"
+            },
+            {
+                "label": "ง่อย",
+                "value": "ง่อย",
+                "type": "str"
+            },
+            {
+                "label": "กระดูกหัก",
+                "value": "กระดูกหัก",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 390,
+        "y": 640,
+        "wires": [
+            [
+                "5a8f72551eadb467"
+            ]
+        ]
+    },
+    {
+        "id": "5a8f72551eadb467",
+        "type": "ui_text",
+        "z": "4019ccb2f74580d2",
+        "group": "8445dfc4dbed0e08",
+        "order": 33,
+        "width": 14,
+        "height": 1,
+        "name": "",
+        "label": "จ่ายยา : ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 620,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "546d1bafbd7393e4",
+        "type": "function",
+        "z": "4019ccb2f74580d2",
+        "name": "function 3",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6354daaccf2b2504",
+        "type": "inject",
+        "z": "4019ccb2f74580d2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[1, 2, 3, 4]",
+        "payloadType": "json",
+        "x": 820,
+        "y": 100,
+        "wires": [
+            [
+                "82ab52c7f894f725"
+            ]
+        ]
+    },
+    {
+        "id": "82ab52c7f894f725",
+        "type": "split",
+        "z": "4019ccb2f74580d2",
+        "name": "Split Array",
+        "splt": " /n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": true,
+        "addname": "",
+        "property": "payload",
+        "x": 990,
+        "y": 100,
+        "wires": [
+            [
+                "80ee79b75e373ba9"
+            ]
+        ]
+    },
+    {
+        "id": "80ee79b75e373ba9",
+        "type": "debug",
+        "z": "4019ccb2f74580d2",
+        "name": "Print individual values",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "15b9b3d17a64e2c7",
+        "type": "split",
+        "z": "4019ccb2f74580d2",
+        "name": "Split by space",
+        "splt": " ",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 600,
+        "y": 280,
+        "wires": [
+            [
+                "e53bcc92457cf3f7",
+                "0ddc3fd155fe801a"
+            ]
+        ]
+    },
+    {
+        "id": "04e6c03430d8459c",
+        "type": "switch",
+        "z": "4019ccb2f74580d2",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 830,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "22f33fe60cedbd47",
+        "type": "mqtt out",
+        "z": "4019ccb2f74580d2",
+        "name": "",
+        "topic": "CEDT/column",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "489db2f6b5b66584",
+        "x": 820,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "9a1ec510d4f2b84d",
+        "type": "ui_button",
+        "z": "4019ccb2f74580d2",
+        "name": "",
+        "group": "8445dfc4dbed0e08",
+        "order": 34,
+        "width": "5",
+        "height": "1",
+        "passthru": false,
+        "label": "จ่ายยา",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "10",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 610,
+        "y": 400,
+        "wires": [
+            [
+                "22f33fe60cedbd47"
+            ]
+        ]
+    },
+    {
+        "id": "46590db3bf5c0886",
+        "type": "ui_template",
+        "z": "4019ccb2f74580d2",
+        "group": "",
+        "name": "dashboard style",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    body {\n        background-image: url(\"/images/medicBG.jpg\") !important;\n        background-repeat: no-repeat;\n        background-position: center;\n        background-size: 100%;\n    }\n\n    ui-card-panel{\n        border-radius: 12px;\n    }\n\n    masonry-container{\n        background-color : red !important;\n        display: flex !important;\n        /* flex-direction: Row !important;\n        justify-content: center !important;\n        align-items: center !important; */\n    }\n\n    .test{\n        align-self: center ;\n        text-align: center !important;\n        height: 55vh !important;\n        width: 80vw !important;\n        display: flex !important;\n    }\n\n    .Row{\n        align-self: center ;\n        text-align: center !important;\n        height: 49vh !important;\n        width: 30vw !important;\n        /* display: flex !important; */\n    }\n\n    .Row2{\n        align-self: center ;\n        text-align: center !important;\n        height: 49vh !important;\n        width: 45vw !important;\n        /* display: flex !important; */\n    }\n\n    .Player{\n        height: 30vh !important;\n        width: 48vh !important;\n        align-self : flex-start !important;\n        background-color: rgba(0,0,0,0.8) !important;\n        font-size: 56px;\n    }\n\n    .nr-dashboard-cardcontainer {\n        /* background-image: url(\"/images/bc.jpg\") !important; */\n        background-color: #A1E3F9 !important;\n        background-position: center !important;\n        background-size: cover !important;\n        justify-items: center !important;\n        height: 80vh !important;\n        width: auto !important;\n    }\n\n    .nr-dashboard-cardtitle{\n        text-align : center !important;\n    }\n\n    .status{\n        height : 320px !important;\n        align-self : center !important;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 420,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "207de119e2c92376",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 1,
+        "width": 22,
+        "height": 1
+    },
+    {
+        "id": "ac53fb39941677fb",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 2,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "6ef103b4bc8f618c",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 4,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "80177990a6fbbaa5",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 5,
+        "width": 22,
+        "height": 1
+    },
+    {
+        "id": "48cdc220c0c53fba",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2c2d04a6bbcdc67c",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 8,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "30b0afea4594e628",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "78bcdfe7e494c945",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "70c76107cee6269d",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "09b034f6701e9ab7",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e4b6118e9dd22d4d",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ac9784598017c2eb",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "109d0239e3bac2f2",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 21,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1aefe3308b6347ad",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d5caf2dce24b65cf",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 24,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "19965a592ab0c6d9",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 25,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "76380234782b5d20",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 26,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "49d6bfb87d94940d",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 27,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7863ef10c84748fb",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 28,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "79a7e419ef1351e6",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 31,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "7d16808e5db7a27f",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 32,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "71f71d7ff01883a9",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "8445dfc4dbed0e08",
+        "order": 34,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "d62fdb29944de7f4",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "7224db0a8c566881",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "9e860126d68d4e30",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "7224db0a8c566881",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "554d34bfbbfeaa66",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "7224db0a8c566881",
+        "order": 6,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "9e2adac45b852523",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "7224db0a8c566881",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3229b7a02a2289e4",
+        "type": "ui_spacer",
+        "z": "4019ccb2f74580d2",
+        "name": "spacer",
+        "group": "7224db0a8c566881",
+        "order": 8,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "8445dfc4dbed0e08",
+        "type": "ui_group",
+        "name": "แฟ้มประวัติผู้ป่วย",
+        "tab": "c8db316fc46aaf40",
+        "order": 1,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": "History"
+    },
+    {
+        "id": "7224db0a8c566881",
+        "type": "ui_group",
+        "name": "status",
+        "tab": "c8db316fc46aaf40",
+        "order": 2,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": "status"
+    },
+    {
+        "id": "489db2f6b5b66584",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c8db316fc46aaf40",
+        "type": "ui_tab",
+        "name": "Medical Records",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    }
+]
